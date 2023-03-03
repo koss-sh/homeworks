@@ -57,6 +57,7 @@ public class Slytherin extends Hogwarts {
     public void setPowerPassion(int powerPassion) {
         this.powerPassion = powerPassion;
     }
+
     public static void printStudent (Slytherin student) {
         System.out.println(student.getName() + ", " + student.getFaculty()
                 + ", cила магии: " + student.getMagicPower()

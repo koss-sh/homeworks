@@ -42,25 +42,26 @@ public class Main {
         Slytherin malfoy = new Slytherin("Драко Малфой", "Слизеринец", RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101), RANDOM.nextInt(101),
-                RANDOM.nextInt());
+                RANDOM.nextInt(101));
 
         Slytherin montague = new Slytherin("Грэхэм Монтегю", "Слизеринец", RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101), RANDOM.nextInt(101),
-                RANDOM.nextInt());
+                RANDOM.nextInt(101));
         Slytherin goyle = new Slytherin("Грегори Гойл", "Слизеринец", RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101),
                 RANDOM.nextInt(101), RANDOM.nextInt(101), RANDOM.nextInt(101),
-                RANDOM.nextInt());
+                RANDOM.nextInt(101));
 
-        Gryffindor.printStudent(potter);
-        Gryffindor.printStudent(granger);
-        Gryffindor.printStudent(weasley);
+        potter.printStudent();
+        granger.printStudent();
+        weasley.printStudent();
         Gryffindor.compare2Gryffindors(granger, weasley);
         Slytherin.printStudent(goyle);
         Slytherin.printStudent(malfoy);
         Slytherin.compare2Slytherins(goyle, malfoy);
         Hogwarts.compare2Students(potter,goyle);
+
     }
 }
 

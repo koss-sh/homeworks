@@ -14,10 +14,10 @@ public class Hogwarts {
         this.apparitionDistance = apparitionDistance;
     }
 
-     public static void printStudent(Hogwarts student) {
-        System.out.println(student.getName() + ", " + student.getFaculty()
-                + ", cила магии: " + student.getMagicPower() + " баллов, трансгрессия: "
-                + student.getApparitionDistance() + " баллов.");
+     public void printStudent() {
+        System.out.println(getName() + ", " + getFaculty()
+                + ", cила магии: " + getMagicPower() + " баллов, трансгрессия: "
+                + getApparitionDistance() + " баллов.");
     }
     public static void compare2Students(Hogwarts s1, Hogwarts s2) {
         if(s1.getMagicPower() > s2.getMagicPower()) {
