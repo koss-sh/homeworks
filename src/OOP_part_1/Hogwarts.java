@@ -15,24 +15,24 @@ public class Hogwarts {
     }
 
      public void printStudent() {
-        System.out.println(getName() + ", " + getFaculty()
-                + ", cила магии: " + getMagicPower() + " баллов, трансгрессия: "
-                + getApparitionDistance() + " баллов.");
+        System.out.println(name + ", " + faculty
+                + ", cила магии: " + magicPower + " баллов, трансгрессия: "
+                + apparitionDistance + " баллов.");
     }
     public static void compare2Students(Hogwarts s1, Hogwarts s2) {
-        if(s1.getMagicPower() > s2.getMagicPower()) {
-            System.out.println(s1.getName() + " обладает большей силой магии, чем " + s2.getName());
-        } else if (s1.getMagicPower() < s2.getMagicPower()) {
-            System.out.println(s2.getName() + " обладает большей силой магии, чем " + s1.getName());
+        if(s1.magicPower > s2.magicPower) {
+            System.out.println(s1.name + " обладает большей силой магии, чем " + s2.name);
+        } else if (s1.magicPower < s2.magicPower) {
+            System.out.println(s2.name + " обладает большей силой магии, чем " + s1.getName());
         } else {
-            System.out.println(s1.getName() + " и " + s2.getName() + " равны по силе магии");
+            System.out.println(s1.name + " и " + s2.name + " равны по силе магии");
         }
-        if(s1.getApparitionDistance() > s2.getApparitionDistance()) {
-            System.out.println(s1.getName() + " обладает большей трансгрессией, чем " + s2.getName());
-        } else if (s1.getApparitionDistance() < s2.getApparitionDistance()) {
-            System.out.println(s2.getName() + " обладает большей трансгрессией, чем " + s1.getName());
+        if(s1.apparitionDistance > s2.apparitionDistance) {
+            System.out.println(s1.name + " обладает большей трансгрессией, чем " + s2.name);
+        } else if (s1.apparitionDistance < s2.apparitionDistance) {
+            System.out.println(s2.name + " обладает большей трансгрессией, чем " + s1.name);
         } else {
-            System.out.println(s1.getName() + " и " + s2.getName() + " равны по трансгрессии");
+            System.out.println(s1.name + " и " + s2.name + " равны по трансгрессии");
         }
     }
 

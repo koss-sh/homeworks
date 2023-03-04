@@ -43,12 +43,12 @@ public class Gryffindor extends Hogwarts {
         System.out.println(getName() + ", " + getFaculty()
                 + ", cила магии: " + getMagicPower()
                 + " баллов, трансгрессия: " + getApparitionDistance()
-                + " баллов, благородство: " + getNobility() + " баллов, честь: " + getHonor()
-                + " баллов, храбрость: " + getBravery() + " баллов");
+                + " баллов, благородство: " + nobility + " баллов, честь: " + honor
+                + " баллов, храбрость: " + bravery + " баллов");
     }
     public static void compare2Gryffindors (Gryffindor s1, Gryffindor s2) {
-        int sum1 = s1.getNobility() + s1.getHonor() + s1.getBravery();
-        int sum2 = s2.getNobility() + s2.getHonor() + s2.getBravery();
+        int sum1 = s1.nobility + s1.honor + s1.bravery;
+        int sum2 = s2.nobility + s2.honor + s2.bravery;
         if(sum1 > sum2) {
             System.out.println(s1.getName() + " лучший " + s1.getFaculty() + ", чем " + s2.getName());
         } else if (sum1 < sum2) {
